@@ -99,8 +99,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="browser-gui\" />
+    <Content Include="browser-gui\css\styles.css" />
+    <Content Include="browser-gui\css\styles.dark.css" />
+    <Content Include="browser-gui\img\logo.bmp" />
+    <Content Include="browser-gui\img\logo.dark.bmp" />
+    <Content Include="browser-gui\index.dark.html" />
+    <Content Include="browser-gui\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
